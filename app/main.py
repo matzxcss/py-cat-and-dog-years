@@ -22,7 +22,7 @@ def get_human_age(cat_age: int, dog_age: int) -> list:
         raise TypeError("cat_age and dog_age must be integers")
 
     if cat_age < 0 or dog_age < 0 or cat_age > 100 or dog_age > 100:
-            raise ValueError("Age is out of realistic range")
+        raise ValueError("Age is out of realistic range")
 
     cat_human_age = convert_to_human_age(cat_age, 15, 9, 4)
     dog_human_age = convert_to_human_age(dog_age, 15, 9, 5)
